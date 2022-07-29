@@ -23,7 +23,7 @@ import javax.servlet.Filter;
 @Configuration
 @EnableWebSecurity
 @AllArgsConstructor
-public class WebSecurityConfig<Md5PasswordEncoder> extends WebSecurityConfigurerAdapter{
+public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
     @Autowired
     private UserDetailsService userDetailsService;
 
