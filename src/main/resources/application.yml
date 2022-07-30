@@ -1,0 +1,7 @@
+#server:
+#  port: 8443
+#  ssl:
+#    key-alias: springsecurityjpajwt
+#    key-store: classpath:springsecurityjpajwt.p12
+#    key-store-password: 121081
+#    key-password: 121081

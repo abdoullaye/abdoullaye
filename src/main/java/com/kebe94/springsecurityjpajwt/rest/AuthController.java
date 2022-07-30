@@ -28,7 +28,7 @@ public class AuthController {
             }
             return new ResponseEntity<>(errers, HttpStatus.NOT_ACCEPTABLE);
         }
-        AppUser existing = accountService.loadUserByUsername(userForm.getUsername());
+        AppUser existing = accountService.findUserByEmail(userForm.getEmail());
         if (existing!=null) {
             throw new RuntimeException("Votre addresse mail,  n'est pas disponible.");
         }

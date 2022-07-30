@@ -52,7 +52,7 @@ public class JwtAuthenticationFilter extends UsernamePasswordAuthenticationFilte
 		System.out.println("email"+appUser.getEmail());
 		System.out.println("password"+appUser.getPassword());
 		UsernamePasswordAuthenticationToken authToken = new UsernamePasswordAuthenticationToken(
-				appUser.getUsername(), appUser.getPassword(), Collections.emptyList());
+				appUser.getEmail(), appUser.getPassword(), Collections.emptyList());
 		return authenticationManager.authenticate(authToken);
 	}
 	@Override
