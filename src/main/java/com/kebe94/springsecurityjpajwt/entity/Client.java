@@ -16,8 +16,6 @@ public class Client {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long clientId;
-    @Column(unique = true)
-    private String email;
     private String lastName;
     private String firstName;
     private boolean actived;
